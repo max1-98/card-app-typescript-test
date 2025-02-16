@@ -15,4 +15,7 @@ model Entry {
   title       String
   description String
   created_at  DateTime
+  scheduled_for DateTime
+
+  @@index([scheduled_for(sort: Desc)])
 }
